@@ -1,17 +1,17 @@
 # Unglare
 
-### Cymbals in the mix, not in your face
+### Remove the glare. Keep the brightness.
 
-The problem was never frequency. It was *time*. EQ cuts brightness but kills presence. Unglare spreads high-frequency transient energy across time using phase dispersion — your brain hears the same brightness but interprets it as depth instead of aggression. Cymbals move from "at the speaker cone" to "in the room."
+Harsh cymbals. Brittle synths. Crispy drum machines. Sibilant vocals. Full mixes where the top end fatigues after 30 seconds. The problem isn't frequency — it's *time*. EQ removes energy. Unglare spreads it. Your brain hears the same brightness but interprets it as depth instead of aggression.
 
-Twelve controls shape how your signal interacts with a chain of analog imperfections: asymmetric saturation, magnetic hysteresis, pitch drift, phase smear, transformer resonance. A 3D spectrum analyzer shows you the peaks and valleys reshaping in real-time.
+Twelve controls shape how your signal interacts with a chain of analog imperfections: phase dispersion, asymmetric saturation, magnetic hysteresis, pitch drift, transformer resonance. A 3D spectrum analyzer shows you the peaks and valleys reshaping in real-time.
 
 ---
 
 ## Downloads
 
 ### Windows (x64) — VST3
-Copy the `windows/Unglare.vst3` folder to:
+Copy `windows/Unglare.vst3` folder to:
 ```
 C:\Program Files\Common Files\VST3\
 ```
@@ -29,12 +29,10 @@ Copy `macos/Unglare.component` to:
 ```
 
 ### macOS note (unsigned)
-These builds are not code-signed. On first use:
 ```bash
 xattr -d com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/Unglare.vst3
 xattr -d com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/Unglare.component
 ```
-Or right-click the plugin in Finder and choose Open.
 
 ---
 
@@ -43,7 +41,7 @@ Or right-click the plugin in Finder and choose Open.
 | Control | What it does |
 |---------|-------------|
 | **Depth** | How far into the analog chain |
-| **HF Smear** | Phase dispersion — pushes cymbals back in the mix |
+| **HF Smear** | Phase dispersion — pushes harsh content back in the mix |
 | **Transient Softening** | Envelope-dependent HF rolloff on loud transients |
 | **Pitch Drift** | Micro-detuning instability in the sustain |
 | **Tube Bend** | Envelope-dependent gain reduction |
@@ -60,5 +58,7 @@ Or right-click the plugin in Finder and choose Open.
 Click to toggle: **Waveform** (input red, output amber) or **3D Spectrum** (ridgeline waterfall from 500 Hz up).
 
 ---
+
+Works in Reaper, Ableton, Logic, Bitwig, Studio One, Cubase, FL Studio, GarageBand.
 
 **v2.1.2** — Built by ChatGPT, Grok, Claude, and Pietro
